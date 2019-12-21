@@ -1,0 +1,279 @@
+html, body {
+  font-size: 1em;
+  color: #333;
+  direction: ltr;
+  height: 100%;
+  width: 100%; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.header {
+  display: block;
+  width: 100%;
+  min-height: 80px;
+  max-height: 80px;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: center;
+  background-color: #013151;
+  padding: calc(20px / 2) 0;
+  box-sizing: border-box; }
+
+.main-content {
+  display: inline-block;
+  width: 100%;
+  min-height: calc(100% - 80px);
+  height: calc(100% - 80px);
+  text-align: center;
+  padding: 25px 0;
+  box-sizing: border-box; }
+
+.wrapper {
+  display: block;
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: left; }
+
+.logoImg {
+  height: calc(80px - 20px); }
+
+.planGrid {
+  padding-top: 30px;
+  display: block;
+  width: 100%; }
+
+.planGrid__selector {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.planGrid__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.planGrid__selectorTitle, .planGrid__selectorDescription {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px; }
+
+.planGrid__selectorChoice {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative; }
+
+.planGrid__selectorLabel {
+  -webkit-touch-callout: none;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.planGrid__planLabel {
+  padding: 1px;
+  background-color: #e50914;
+  color: #ffffff;
+  font-weight: bold;
+  opacity: 0.8;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 17px;
+  margin: 0 auto; }
+
+.planGrid__selectorChoice {
+  cursor: pointer; }
+
+.planGrid__selectorChoice:hover .planGrid__planLabel {
+  opacity: 1; }
+
+.planGrid__planInput, .planGrid__planLabel {
+  width: 120px;
+  height: 120px; }
+
+.planGrid__planInput {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.planGrid__planSelector {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1; }
+
+.planGrid__selectorInput {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none; }
+
+.planGrid__planChoice {
+  width: -webkit-calc(100% / 4);
+  width: -moz-calc(100% / 4);
+  width: calc(100% / 4); }
+
+.planGrid__planChoice {
+  padding: 12px 0;
+  margin: 0 25px; }
+
+.planGrid__featureTableRow {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.planGrid__featureTable {
+  border-collapse: collapse;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 10px; }
+
+.planGrid__featureTableRow {
+  border-bottom: 1px solid #cccccc;
+  min-height: 60px; }
+
+table {
+  border-spacing: 2px;
+  width: 100%; }
+
+.planGrid__cell {
+  padding: 12px 16px;
+  box-sizing: border-box; }
+
+.planGrid__cell {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333;
+  fill: #333;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  text-align: center; }
+
+.planGrid__cell {
+  width: -webkit-calc(60% / 4);
+  width: -moz-calc(60% / 4);
+  width: calc(60% / 4); }
+
+.planGrid__featureCell {
+  width: 40%; }
+
+.planGrid__featureCell {
+  color: #333333;
+  fill: #333333;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  text-align: left;
+  font-size: 1.15em;
+  font-style: bold; }
+
+.planGrid__booleanLabel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  opacity: 0;
+  line-height: 1em;
+  font-size: 1em; }
+
+svg {
+  height: 20px !important; }

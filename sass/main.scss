@@ -1,0 +1,57 @@
+$height: 80px;
+$offset: 20px;
+
+html, body {
+	font-size: 1em;
+	color: #333;
+	direction: ltr;
+	height: 100%;
+	width: 100%;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+	display: block;
+	width: 100%;
+	min-height: $height;
+	max-height: $height;
+	border-bottom: 1px solid #e6e6e6;
+	text-align: center;
+	background-color: #013151;
+	padding: calc(#{$offset} / 2) 0;
+	box-sizing: border-box;
+}
+
+.main-content {
+	display: inline-block;
+	width: 100%;
+	min-height: calc(100% - #{$height});
+	height: calc(100% - #{$height});
+	text-align: center;
+	padding: 25px 0;
+	box-sizing: border-box;
+}
+.wrapper {
+	display: block;
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.logoImg {
+	height: calc(#{$height} - #{$offset});
+}
+
+.planGrid {
+	padding-top: 30px;
+	display: block;
+	width: 100%;
+}
+
+@import 'netflix-header';
+@import 'netflix-table';
