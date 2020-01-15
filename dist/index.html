@@ -39,7 +39,7 @@
 						<label class="planGrid__selectorChoice planGrid__planChoice">
 							<input type="radio" name="planChoice" class="planGrid__selectorInput planGrid__planInput" id="planGrid_planChoice_2">	
 							<span class="planGrid__selectorLabel planGrid__planLabel">	
-								Premium
+								Group <br> Advantage
 							</span>
 						</label>
 					</div>
@@ -47,26 +47,29 @@
 				<div class="planGrid__content">
 					<table>
 						<tbody>
+							<!-- 1 -->
 							<tr role="row" class="planGrid__featureTableRow">
 								<td class="planGrid__cell planGrid__featureCell" role="cell" data-uia="plan-grid-feature-table-cell+0-0">
-									Monthly price after free month ends
+									Monatlicher Preis nach Ablauf des Gratismonats
 								</td>
-								<td class="planGrid__cell planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-1" aria-label="Basis">
+								<td class="planGrid__cell planGrid__stringCell price" role="cell" data-uia="plan-grid-feature-table-cell+0-1" aria-label="Basis">
 									7,99&nbsp;€
 								</td>
-								<td class="planGrid__cell planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-2" aria-label="Standard">
+								<td class="planGrid__cell planGrid__stringCell price" role="cell" data-uia="plan-grid-feature-table-cell+0-2" aria-label="Standard">
 									11,99&nbsp;€
 								</td>
-								<td class="planGrid__cell planGrid__cell--isSelected planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-3" aria-label="Premium">
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__stringCell price" role="cell" data-uia="plan-grid-feature-table-cell+0-3" aria-label="Premium">
 									15,99&nbsp;€
 								</td>
-								<td class="planGrid__cell planGrid__cell--isSelected planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-3" aria-label="Premium">
-									15,99&nbsp;€
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__stringCell price" role="cell" data-uia="plan-grid-feature-table-cell+0-3" aria-label="Premium">
+									24,99&nbsp;€
 								</td>
 							</tr>
+
+							<!-- 2 -->
 							<tr role="row" class="planGrid__featureTableRow">
 								<td class="planGrid__cell planGrid__featureCell" role="cell" data-uia="plan-grid-feature-table-cell+1-0">
-									HD available
+									HD-Qualität
 								</td>
 								<td class="planGrid__cell planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-1" aria-label="Basis">
 									<span class="planGrid__booleanLabel">No</span>
@@ -76,39 +79,260 @@
 										</svg>
 									</span>
 								</td>
-								<td class="planGrid__cell planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-2" aria-label="Standard"><span class="planGrid__booleanLabel">Yes</span><span class="planGrid__booleanIcon" aria-hidden="true"><svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true"><path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path></svg></span></td>
-								<td class="planGrid__cell planGrid__cell--isSelected planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-3" aria-label="Premium"><span class="planGrid__booleanLabel">Yes</span><span class="planGrid__booleanIcon" aria-hidden="true"><svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true"><path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path></svg></span>
+								<td class="planGrid__cell planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-2" aria-label="Standard">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
 								</td>
-								<td class="planGrid__cell planGrid__cell--isSelected planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-3" aria-label="Premium"><span class="planGrid__booleanLabel">Yes</span><span class="planGrid__booleanIcon" aria-hidden="true"><svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true"><path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path></svg></span>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-3" aria-label="Premium">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-3" aria-label="Premium">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
 								</td>
 							</tr>
-							
-							    <tr role="row" class="planGrid__featureTableRow">
-									<td class="planGrid__cell planGrid__featureCell" role="cell">
-										Monthly
-									</td>
-									
-										<td class="planGrid__cell" planGrid__stringCell role="cell">
-											ayme
-										</td>
-									
-										<td class="planGrid__cell" planGrid__stringCell role="cell">
-											2222
-										</td>
-									
-										<td class="planGrid__cell" planGrid__stringCell role="cell">
-											2211
-										</td>
-									
-										<td class="planGrid__cell" planGrid__stringCell role="cell">
-											sdfshdifld
-										</td>
-									
-								</tr>
-							
+
+							<!-- 3 -->
+							<tr role="row" class="planGrid__featureTableRow">
+								<td class="planGrid__cell planGrid__featureCell" role="cell" data-uia="plan-grid-feature-table-cell+1-0">
+									Keine Werbeunterbrechungen
+								</td>
+								<td class="planGrid__cell planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-1" aria-label="Basis">
+									<span class="planGrid__booleanLabel">No</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid__booleanGraphic" focusable="true">
+										<path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-2" aria-label="Standard">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-3" aria-label="Premium">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-3" aria-label="Premium">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+							</tr>
+
+							<!-- 4 -->
+							<tr role="row" class="planGrid__featureTableRow">
+								<td class="planGrid__cell planGrid__featureCell" role="cell" data-uia="plan-grid-feature-table-cell+0-0">
+									Maximale Anzahl der Geräte, auf denen gleichzeitig gestreamt werden
+								</td>
+								<td class="planGrid__cell planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-1" aria-label="Basis">
+									1
+								</td>
+								<td class="planGrid__cell planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-2" aria-label="Standard">
+									1
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-3" aria-label="Premium">
+									2
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-3" aria-label="Premium">
+									5
+								</td>
+							</tr>
+
+							<!-- 5 -->
+							<tr role="row" class="planGrid__featureTableRow">
+								<td class="planGrid__cell planGrid__featureCell" role="cell" data-uia="plan-grid-feature-table-cell+0-0">
+									Anzahl Benutzer-Profile pro Konto
+								</td>
+								<td class="planGrid__cell planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-1" aria-label="Basis">
+									0
+								</td>
+								<td class="planGrid__cell planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-2" aria-label="Standard">
+									1
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-3" aria-label="Premium">
+									1
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-3" aria-label="Premium">
+									4
+								</td>
+							</tr>
+
+							<!-- 6 -->
+							<tr role="row" class="planGrid__featureTableRow">
+								<td class="planGrid__cell planGrid__featureCell" role="cell" data-uia="plan-grid-feature-table-cell+0-0">
+									Multi Language Support
+								</td>
+								<td class="planGrid__cell planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-1" aria-label="Basis">
+									<span class="planGrid__booleanLabel">No</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid__booleanGraphic" focusable="true">
+										<path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-2" aria-label="Standard">
+									buchbare Pakete
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-3" aria-label="Premium">
+									buchbare Pakete
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__stringCell" role="cell" data-uia="plan-grid-feature-table-cell+0-3" aria-label="Premium">
+									buchbare Pakete
+								</td>
+							</tr>
+
+							<!-- 7 -->
+							<tr role="row" class="planGrid__featureTableRow">
+								<td class="planGrid__cell planGrid__featureCell" role="cell" data-uia="plan-grid-feature-table-cell+1-0">
+									Auf dem Laptop, TV, Smartphone und Tablet schauen
+								</td>
+								<td class="planGrid__cell planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-1" aria-label="Basis">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid__booleanGraphic" focusable="true">
+										<path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-2" aria-label="Standard">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-3" aria-label="Premium">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-3" aria-label="Premium">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+							</tr>
+
+							<!-- 8 -->
+							<tr role="row" class="planGrid__featureTableRow">
+								<td class="planGrid__cell planGrid__featureCell" role="cell" data-uia="plan-grid-feature-table-cell+1-0">
+									Jederzeit kündbar
+								</td>
+								<td class="planGrid__cell planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-1" aria-label="Basis">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid__booleanGraphic" focusable="true">
+										<path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-2" aria-label="Standard">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-3" aria-label="Premium">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-3" aria-label="Premium">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+							</tr>
+
+							<!-- 9 -->
+							<tr role="row" class="planGrid__featureTableRow">
+								<td class="planGrid__cell planGrid__featureCell" role="cell" data-uia="plan-grid-feature-table-cell+1-0">
+									Erster Monat kostenlos
+								</td>
+								<td class="planGrid__cell planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-1" aria-label="Basis">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x planGrid__booleanGraphic" focusable="true">
+										<path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-2" aria-label="Standard">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-3" aria-label="Premium">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+								<td class="planGrid__cell planGrid__cell--isSelected planGrid__booleanCell" role="cell" data-uia="plan-grid-feature-table-cell+1-3" aria-label="Premium">
+									<span class="planGrid__booleanLabel">Yes</span>
+									<span class="planGrid__booleanIcon" aria-hidden="true">
+										<svg id="thin-check" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-check planGrid__booleanGraphic" focusable="true">
+											<path d="M9.19 22.892L.5 14.198l1.232-1.233 7.236 7.24L23.793.516l1.38 1.04L9.19 22.892"></path>
+										</svg>
+									</span>
+								</td>
+							</tr>
+
 						</tbody>
 					</table>
 				</div>
+			</div>
+			
+			<div class="netflix-footer">
+				<small class="planGrid__legal">
+					<span data-uia="plan-grid-legal">Die Verfügbarkeit von HD- und Ultra-HD-Bildqualität ist abhängig von Ihrem Internetdienst und Gerät. Nicht alle Inhalte stehen in HD oder Ultra-HD zur Verfügung. Weitere Details entnehmen Sie bitte unserer Website.
+					</span>
+				</small>
 			</div>
 			
 

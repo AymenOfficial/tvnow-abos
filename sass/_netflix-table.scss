@@ -65,6 +65,7 @@ table {
     width: -webkit-calc(60% / 4);
     width: -moz-calc(60% / 4);
     width: calc(60% / 4);
+    font-family:  $font-price;
 }
 
 .planGrid__featureCell {
@@ -102,5 +103,20 @@ table {
 }
 
 svg {
-    height: 20px !important;
+    height: 24px !important;
+}
+
+.planGrid__booleanCell {
+    padding: 12px 15px 8px;
+    margin-bottom: -4px;
+}
+
+.planGrid__stringCell {
+    font-size: 20px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.price {
+    font-weight: bold;
 }

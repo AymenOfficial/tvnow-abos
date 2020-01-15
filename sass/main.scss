@@ -1,5 +1,11 @@
-$height: 80px;
-$offset: 20px;
+$height: 100px;
+$offset: 40px;
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+
+$font-primary: 'Merriweather', serif;
+$font-price: 'Catamaran', sans-serif;
 
 html, body {
 	font-size: 1em;
@@ -12,6 +18,7 @@ html, body {
 * {
 	padding: 0;
 	margin: 0;
+	font-family: $font-primary;
 }
 
 .header {
@@ -55,3 +62,4 @@ html, body {
 
 @import 'netflix-header';
 @import 'netflix-table';
+@import 'netflix-footer';

@@ -26,12 +26,8 @@ gulp.task('html', function() {
 
 gulp.task('compile', function () {
     'use strict';
-    var twig = require('gulp-twig');
-    return gulp.src('./index.twig')
-        .pipe(twig({
-            data: data
-        }))
-        .pipe(gulp.dest('./dist'));
+    return gulp.src('./index.html')
+        .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('js', function() {
@@ -47,7 +43,7 @@ gulp.task('copy', function () {
 
 gulp.task('watch', function() {
     gulp.watch('./sass/**/*.scss', gulp.series('sass'));
-	gulp.watch('index.twig', gulp.series('compile'));
+	gulp.watch('index.html', gulp.series('compile'));
 	gulp.watch('index.js', gulp.series('js'));
 });
 
