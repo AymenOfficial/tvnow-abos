@@ -281,10 +281,10 @@ table {
   font-size: 1em; }
 
 svg {
-  height: 24px !important; }
+  height: 20px !important; }
 
 .planGrid__booleanCell {
-  padding: 12px 15px 8px;
+  padding: 12px 15px 0px;
   margin-bottom: -4px; }
 
 .planGrid__stringCell {
@@ -294,6 +294,9 @@ svg {
 
 .price {
   font-weight: bold; }
+
+.number {
+  font-weight: 28px; }
 
 .netflix-footer {
   text-align: center;
