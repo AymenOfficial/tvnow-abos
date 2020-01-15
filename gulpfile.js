@@ -1,7 +1,12 @@
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
-    livereload = require('gulp-livereload'),
-	connect = require('gulp-connect');
+  livereload = require('gulp-livereload'),
+	connect = require('gulp-connect'),
+  twig = require('gulp-twig');
+
+var data = require('./data.json');
+
+console.log(data);
 
 sass.compiler = require('node-sass');
 
@@ -19,6 +24,16 @@ gulp.task('html', function() {
         .pipe(connect.reload());
 });
 
+gulp.task('compile', function () {
+    'use strict';
+    var twig = require('gulp-twig');
+    return gulp.src('./index.twig')
+        .pipe(twig({
+            data: data
+        }))
+        .pipe(gulp.dest('./dist'));
+});
+
 gulp.task('js', function() {
     return gulp.src('index.js')
         .pipe(gulp.dest('dist/'))
@@ -32,7 +47,7 @@ gulp.task('copy', function () {
 
 gulp.task('watch', function() {
     gulp.watch('./sass/**/*.scss', gulp.series('sass'));
-	gulp.watch('index.html', gulp.series('html'));
+	gulp.watch('index.twig', gulp.series('compile'));
 	gulp.watch('index.js', gulp.series('js'));
 });
 
@@ -47,4 +62,4 @@ gulp.task('connect', function() {
 
 
 
-gulp.task('default', gulp.parallel('sass', 'html', 'copy', 'js', 'connect','watch'));
+gulp.task('default', gulp.parallel('sass', 'copy', 'js', 'compile', 'connect','watch'));

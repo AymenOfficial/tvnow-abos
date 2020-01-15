@@ -129,10 +129,10 @@ html, body {
 
 .planGrid__planLabel {
   padding: 1px;
-  background-color: #e50914;
+  background-color: #013151;
   color: #ffffff;
   font-weight: bold;
-  opacity: 0.8;
+  opacity: 0.9;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -184,7 +184,7 @@ html, body {
 
 .planGrid__planChoice {
   padding: 12px 0;
-  margin: 0 25px; }
+  margin: 0 24px; }
 
 .planGrid__featureTableRow {
   -webkit-box-align: center;

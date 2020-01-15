@@ -1,0 +1,28 @@
+
+# Created by https://www.gitignore.io/api/react,grunt
+# Edit at https://www.gitignore.io/?templates=react,grunt
+
+### grunt ###
+# Grunt usually compiles files inside this directory
+dist/
+
+# Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
+.tmp/
+
+### react ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
+# End of https://www.gitignore.io/api/react,grunt
